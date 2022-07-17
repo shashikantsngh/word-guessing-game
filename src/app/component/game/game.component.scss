@@ -1,0 +1,50 @@
+@import "../../../styles.scss";
+
+.container {
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
+  transition-duration: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container .fullWord ul {
+  column-count: 5;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.container .fullWord ul .singleLetter {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+
+  border: 2px;
+  font-weight: 600;
+  border-style: solid;
+  border-color: $words-border-color;
+  margin-top: $words-margin + $words-margin;
+  margin-left: $words-margin;
+  margin-right: $words-margin;
+  min-width: $words-box-size;
+  min-height: $words-box-size;
+}
+
+.container .fullWord ul .letterContainer #incorrect {
+  background-color: $incorrect;
+  color: $letterColor;
+}
+
+.container .fullWord ul .letterContainer #halfCorrect {
+  background-color: $halfCorrect;
+  color: $letterColor;
+}
+.container .fullWord ul .letterContainer #fullCorrect {
+  background-color: $fullCorrect;
+  color: $letterColor;
+}
